@@ -6,3 +6,4 @@ export default {
   apiUrl: process.env.NEXTAUTH_URL || "http://localhost:4000",
   secretKey: process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY,
 };
+ 
