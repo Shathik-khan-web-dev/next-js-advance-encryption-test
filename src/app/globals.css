@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+html {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+html.dark {
+  --bg-color: #000000;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+p {
+  text-wrap: wrap !important;
+}
+
+li {
+  text-wrap: wrap !important;
+}
+
+/* Customize scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Darker handle */
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker on hover */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #333; /* Dark background for track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Dark handle */
+  }
+}
+
+/* zoom img */
+
+.zoom-container {
+  background: linear-gradient(to right, #55c88b, #2e8b57);
+  position: relative;
+}
+
+.zoom-image {
+  width: 500px;
+  height: 500px;
+  background-size: 100% 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.zoom-image-zoomed {
+  width: 550px !important;
+  height: 400px;
+  background-size: 600% 600%;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.lens {
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  border: 3px solid #00b050;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
+
+/* 404 page */
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url("/404.gif");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.content_box_404 {
+  margin-top: -50px;
+}

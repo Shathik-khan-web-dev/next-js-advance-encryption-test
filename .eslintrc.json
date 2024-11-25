@@ -1,0 +1,96 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "no-console": "warn"
+  }
+}
+
+/* 
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "rules": {
+    // React specific rules
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off", // If you're not using prop-types
+    "react/react-in-jsx-scope": "off", // Not needed in Next.js
+    "react/display-name": "off",
+    "react/no-array-index-key": "warn",
+
+    // Best Practices
+    "eqeqeq": ["error", "always"],
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-alert": "warn",
+    "curly": ["error", "all"],
+    "no-empty": "warn",
+    "no-multi-spaces": "error",
+    "no-unused-vars": "warn",
+
+    // ES6 specific rules
+    "prefer-const": "warn",
+    "no-var": "error",
+    "prefer-arrow-callback": "warn",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    
+    // Import plugin rules
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/no-unresolved": "error",
+    "import/no-duplicates": "error",
+
+    // Accessibility plugin rules
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/alt-text": "error",
+    "jsx-a11y/label-has-associated-control": "error",
+
+    // Hooks plugin rules
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn", // Check effect dependencies
+
+    // Code style preferences
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "always"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "comma-dangle": ["error", "always-multiline"],
+    "space-before-blocks": "error",
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "object-curly-spacing": ["error", "always"]
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+ */
